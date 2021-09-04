@@ -6,7 +6,7 @@ import {
   ChevronDownIcon,
   HomeIcon,
   UserGroupIcon,
-  ViewGridIcons,
+  ViewGridIcon,
 } from '@heroicons/react/solid';
 import {
   FlagIcon,
@@ -18,7 +18,7 @@ import HeaderIcon from './ui/HeaderIcon';
 
 function Header() {
   return (
-    <div className="m-3">
+    <div className="sticky top-0 z-50 items-center bg-white flex p-2 lg:p-5 shadow-md">
       {/* left */}
       <div className="flex items-center space-x-2">
         <Image
@@ -29,27 +29,35 @@ function Header() {
           height={40}
           layout="fixed"
         />
-        <div className="flex bg-gray-200 rounded-full p-2 space-x-2">
+        <div className="hidden md:inline-flex bg-gray-200 rounded-full p-2 space-x-2">
           <SearchIcon className="h-6 text-gray-600" />
           <input
-            className="outline-none select-none bg-transparent"
+            className="outline-none hidden lg:inline-flex select-none flex-shrink bg-transparent"
             type="text"
             placeholder="Search Storybook"
           />
         </div>
+      </div>
 
-        {/* center */}
-        <div className="flex flex-grow justify-center">
-          <div className="flex space-x-6 md:space-x-2">
-            <HeaderIcon Icon={HomeIcon} />
-            <HeaderIcon Icon={FlagIcon} />
-            <HeaderIcon Icon={PlayIcon} />
-            <HeaderIcon Icon={ShoppingCartIcon} />
-            <HeaderIcon Icon={UserGroupIcon} />
-          </div>
+      {/* center */}
+      <div className="flex flex-grow justify-center">
+        <div className="flex space-x-6 md:space-x-2">
+          <HeaderIcon Icon={HomeIcon} />
+          <HeaderIcon Icon={FlagIcon} />
+          <HeaderIcon Icon={PlayIcon} />
+          <HeaderIcon Icon={ShoppingCartIcon} />
+          <HeaderIcon Icon={UserGroupIcon} />
         </div>
+      </div>
 
-        {/* right */}
+      {/* right */}
+      <div className="flex items-center sm:space-x-2 justify-end">
+        {/* Profile Pic */}
+        <p className="font-semibold whitespace-nowrap pr-3">Georgey V B</p>
+        <ViewGridIcon className="icon" />
+        <ChatIcon className="icon " />
+        <BellIcon className="icon" />
+        <ChevronDownIcon className="icon" />
       </div>
     </div>
   );
