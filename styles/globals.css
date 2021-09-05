@@ -6,4 +6,8 @@
   .icon {
     @apply hidden xl:inline-flex h-10 w-10 p-2 bg-gray-200 rounded-full hover:bg-gray-300 text-gray-700 cursor-pointer hover:text-blue-700;
   }
+
+  .animation {
+    @apply hover:scale-105 transition duration-100 transform ease-in-out;
+  }
 }
