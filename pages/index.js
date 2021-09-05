@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '@/components/Header';
 import { getSession } from 'next-auth/client';
 import SideBar from '@/components/SideBar';
+import Feed from '@/components/Feed';
 
 function Home() {
   return (
@@ -12,10 +13,9 @@ function Home() {
 
       <Header />
 
-      <main>
-        {/* SideBar */}
+      <main className="flex">
         <SideBar />
-        {/* Feed */}
+        <Feed />
         {/* Widgets */}
       </main>
     </div>

@@ -65,7 +65,7 @@ function Header() {
           height={35}
           layout="fixed"
         />
-        <p className="font-semibold hidden md:inline-flex whitespace-nowrap pr-3">
+        <p className="font-semibold hidden lg:inline-flex whitespace-nowrap pr-3">
           {session && session.user.name}{' '}
         </p>
         <LogoutIcon
