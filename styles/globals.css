@@ -10,4 +10,8 @@
   .animation {
     @apply hover:scale-105 transition duration-100 transform ease-in-out;
   }
+
+  .input-icon {
+    @apply flex items-center space-x-1 cursor-pointer hover:bg-gray-100 flex-grow justify-center p-2 rounded-xl;
+  }
 }
