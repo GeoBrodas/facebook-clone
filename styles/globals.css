@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-gray-100;
+  }
+}
+
 @layer components {
   .icon {
     @apply hidden xl:inline-flex h-10 w-10 p-2 bg-gray-200 rounded-full hover:bg-gray-300 text-gray-700 cursor-pointer hover:text-blue-700;

@@ -13,7 +13,7 @@ function Home() {
 
       <Header />
 
-      <main className="flex bg-gray-100">
+      <main className="flex">
         <SideBar />
         <Feed />
         {/* Widgets */}
