@@ -11,7 +11,7 @@ function Auth() {
         <title>SignIn to Facebook</title>
       </Head>
       <div className="grid place-items-center mt-20">
-        <div className="max-w-lg m-4 bg-blue-50 rounded-xl p-10 grid place-items-center">
+        <div className="max-w-lg m-4 bg-blue-100 rounded-xl p-10 grid place-items-center">
           <div className="grid place-items-center justify-center p-10 items-center">
             <Image
               layout="fixed"
