@@ -88,21 +88,21 @@ function InputBox() {
   return (
     <div className="bg-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6">
       <div className="flex space-x-4 p-4 items-center">
-        <div className="hidden sm:inline-flex">
-          <Image
-            className="rounded-full"
-            alt={name}
-            src={image}
-            width={40}
-            height={40}
-            layout="fixed"
-          />
-        </div>
+        {/* <div className="hidden sm:inline-flex"> */}
+        <Image
+          className="rounded-full"
+          alt={name}
+          src={image}
+          width={40}
+          height={40}
+          layout="fixed"
+        />
+        {/* </div> */}
 
         <form className="flex flex-1">
           <input
             ref={inputRef}
-            className="outline-none rounded-full h-12 bg-gray-100 px-5 flex-grow"
+            className="outline-none rounded-full h-12 bg-gray-100 px-1 sm:px-5 flex-grow"
             type="text"
             placeholder={`Watcha thinking ${name}?`}
           />

@@ -14,7 +14,7 @@ import {
 
 function SideBar() {
   return (
-    <div className="p-2 mt-5 max-w-[600px] xl:min-w-[300px]">
+    <div className="hidden sm:inline-flex flex-col p-2 mt-5 max-w-[600px] xl:min-w-[300px]">
       <SideBarIcon Icon={UsersIcon} title="Friends" />
       <SideBarIcon Icon={UserGroupIcon} title="Groups " />
       <SideBarIcon Icon={ShoppingBagIcon} title="MarketPlace" />
