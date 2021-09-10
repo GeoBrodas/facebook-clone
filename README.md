@@ -1,5 +1,7 @@
 # FaceBook Clone -> StoryBook
 
+![Site-preview](https://pbs.twimg.com/media/E-6wWh7VgAU8Dkm?format=jpg&name=4096x4096)
+
 ## Tech Stack
 
 - NextJS
