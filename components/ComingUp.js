@@ -6,6 +6,7 @@ function ComingUp() {
         <li>Likes, comments</li>
         <li>Fix on Image resoultion</li>
         <li>More UI improvements</li>
+        <li>PWA support</li>
         <li>Welcoming more contributions!</li>
       </ul>
     </div>

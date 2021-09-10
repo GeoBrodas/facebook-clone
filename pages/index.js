@@ -19,7 +19,7 @@ function Home() {
   return (
     <div className="h-screen bg-gray-100 overflow-hidden">
       <Head>
-        <title>StoryBook</title>
+        <title>Facebook but better⚡</title>
       </Head>
 
       <Header />
