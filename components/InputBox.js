@@ -3,12 +3,15 @@ import Image from 'next/image';
 
 import { EmojiHappyIcon } from '@heroicons/react/outline';
 import { CameraIcon, VideoCameraIcon } from '@heroicons/react/solid';
-import { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import { db, storage } from '../firebase-config';
 import firebase from 'firebase';
 
+// import { LinearProgress } from '@material-ui/core';
+
 function InputBox() {
+  // let progress;
   const inputRef = useRef(null);
   const fileUploadRef = useRef(null);
 
@@ -43,10 +46,15 @@ function InputBox() {
 
           uploadTask.on(
             'state_change',
-            null,
+            // (snapshot) => {
+            //   progress =
+            //     (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+            //   console.log(progress);
+            // },
             (error) => console.error(error),
             () => {
               // after uploading completes ( progress can also be displayes --optional )
+
               storage
                 .ref(`posts/${doc.id}`)
                 .getDownloadURL()

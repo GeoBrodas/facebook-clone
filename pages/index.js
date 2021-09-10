@@ -4,7 +4,17 @@ import { getSession } from 'next-auth/client';
 import SideBar from '@/components/SideBar';
 import Feed from '@/components/Feed';
 
+import { useCollection } from 'react-firebase-hooks/firestore';
+import { db } from 'firebase-config';
+
+// Linear Progress
+import { LinearProgress } from '@material-ui/core';
+
 function Home() {
+  const [realtimePosts, loading] = useCollection(
+    db.collection('posts').orderBy('timestamp', 'desc')
+  );
+
   return (
     <div>
       <Head>
@@ -12,10 +22,11 @@ function Home() {
       </Head>
 
       <Header />
+      {loading && <LinearProgress color="primary" />}
 
       <main className="flex">
         <SideBar />
-        <Feed />
+        <Feed posts={realtimePosts} />
         {/* Widgets */}
       </main>
     </div>
