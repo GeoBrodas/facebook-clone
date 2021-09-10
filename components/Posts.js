@@ -6,7 +6,7 @@ function Posts(props) {
   const { posts } = props;
 
   return (
-    <div className="pb-5">
+    <div>
       {/* Optional chaining in action (down : ?.):-> returns undifined if found null -> sub for writing ternary operation */}
       {posts?.docs.map((doc) => (
         <PostCard

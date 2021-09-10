@@ -46,11 +46,7 @@ function InputBox() {
 
           uploadTask.on(
             'state_change',
-            // (snapshot) => {
-            //   progress =
-            //     (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            //   console.log(progress);
-            // },
+            null,
             (error) => console.error(error),
             () => {
               // after uploading completes ( progress can also be displayes --optional )

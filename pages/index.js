@@ -9,6 +9,7 @@ import { db } from 'firebase-config';
 
 // Linear Progress
 import { LinearProgress } from '@material-ui/core';
+import Widgets from '@/components/Widgets';
 
 function Home() {
   const [realtimePosts, loading] = useCollection(
@@ -16,7 +17,7 @@ function Home() {
   );
 
   return (
-    <div>
+    <div className="h-screen bg-gray-100 overflow-hidden">
       <Head>
         <title>StoryBook</title>
       </Head>
@@ -27,7 +28,7 @@ function Home() {
       <main className="flex">
         <SideBar />
         <Feed posts={realtimePosts} />
-        {/* Widgets */}
+        <Widgets />
       </main>
     </div>
   );
