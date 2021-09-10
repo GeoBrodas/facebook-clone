@@ -30,7 +30,13 @@ function PostCard(props) {
       <div className="p-5 bg-white rounded-t-2xl mt-5 shadow-md">
         <div className="flex items-center space-x-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={userimage} width={40} height={40} alt={name} />
+          <img
+            className="rounded-full"
+            src={userimage}
+            width={40}
+            height={40}
+            alt={name}
+          />
           <div>
             <p className="font-medium">{name}</p>
             <p className="text-xs text-gray-400">
@@ -58,7 +64,7 @@ function PostCard(props) {
 
       {/* Fotter of PostCard */}
       <div className="flex justify-between items-center rounded-b-2xl bg-white shadow-md text-gray-400 border-t">
-        <div className="input-icon rounded-bl-2xl">
+        <div className="rounded-bl-2xl input-icon">
           <ThumbUpIcon className="h-4" />
           <p className="text-xs sm:text-base">Like</p>
         </div>
