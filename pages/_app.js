@@ -23,6 +23,18 @@ function MyApp({ Component, pageProps }) {
           content="https://facebook-clone-geo.vercel.app"
         />
         <meta name="twitter:card" content="summary_large_image" />
+
+        {/* Twitter */}
+        <meta name="twitter:title" content="Facebook Clone but better ⚡" />
+        <meta
+          name="twitter:description"
+          content="This project has a main focus on re-creating the UI with some basic functionality of adding posts, images."
+        />
+        <meta
+          name="twitter:image"
+          content="https://pbs.twimg.com/media/E-6wWh7VgAU8Dkm?format=jpg&name=4096x4096"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Component {...pageProps} />
     </Provider>
