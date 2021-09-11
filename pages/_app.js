@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           name="twitter:image"
-          content="https://pbs.twimg.com/media/E-6wWh7VgAU8Dkm?format=jpg&name=4096x4096"
+          content="https://res.cloudinary.com/dapafwlvo/image/upload/v1631360016/Facebook_Clone_but_Better_tivwqz.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
